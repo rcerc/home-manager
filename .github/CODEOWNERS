@@ -89,6 +89,8 @@
 
 /modules/programs/firefox.nix                         @rycee
 
+/modules/programs/firejail.nix                        @rcerc
+
 /modules/programs/foot.nix                            @plabadens
 /tests/modules/programs/foot                          @plabadens
 

@@ -67,6 +67,7 @@ let
     ./programs/exa.nix
     ./programs/feh.nix
     ./programs/firefox.nix
+    ./programs/firejail.nix
     ./programs/fish.nix
     ./programs/foot.nix
     ./programs/fzf.nix
