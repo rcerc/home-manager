@@ -101,6 +101,7 @@ let
       ./programs/fd.nix
       ./programs/feh.nix
       ./programs/firefox.nix
+      ./programs/firejail.nix
       ./programs/fish.nix
       ./programs/floorp.nix
       ./programs/foot.nix
