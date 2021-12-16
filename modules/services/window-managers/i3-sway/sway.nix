@@ -625,6 +625,28 @@ in
       '';
     };
 
+    swayidle = {
+      enable = lib.mkOption rec {
+        type = lib.types.bool;
+        default = false;
+        example = !default;
+        description = ''
+          Whether to launch swayidle from Sway.
+        '';
+      };
+      args = lib.mkOption {
+        type = lib.types.listOf lib.types.str;
+        default = [ ];
+        example = [
+          "-d"
+          "-w"
+        ];
+        description = ''
+          Arguments to launch swayidle with.
+        '';
+      };
+    };
+
     wrapperFeatures = mkOption {
       type = wrapperOptions;
       default = { };
@@ -744,6 +766,12 @@ in
             Before = optional cfg.systemd.xdgAutostart "xdg-desktop-autostart.target";
           };
         };
+
+        wayland.windowManager.sway.config.startup = lib.mkIf cfg.swayidle.enable [
+          {
+            command = "${lib.getBin pkgs.swayidle}/bin/swayidle ${lib.escapeShellArgs cfg.swayidle.args}";
+          }
+        ];
       }
     ]
   );
