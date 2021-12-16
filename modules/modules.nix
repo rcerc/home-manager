@@ -146,6 +146,7 @@ let
     ./programs/sqls.nix
     ./programs/ssh.nix
     ./programs/starship.nix
+    ./programs/swayidle.nix
     ./programs/taskwarrior.nix
     ./programs/terminator.nix
     ./programs/termite.nix
