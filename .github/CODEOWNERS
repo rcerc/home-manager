@@ -242,6 +242,7 @@
 /modules/programs/starship.nix                        @marsam
 
 /modules/programs/swayidle.nix                        @rcerc
+/tests/modules/programs/swayidle                      @rcerc
 
 /modules/programs/terminator.nix                      @chisui
 

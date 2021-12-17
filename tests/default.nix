@@ -97,6 +97,7 @@ import nmt {
     ./modules/programs/sm64ex
     ./modules/programs/ssh
     ./modules/programs/starship
+    ./modules/programs/swayidle
     ./modules/programs/taskwarrior
     ./modules/programs/texlive
     ./modules/programs/tmux
