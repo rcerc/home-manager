@@ -396,7 +396,7 @@ let
           pkgs.path
         else
           <nixpkgs>);
-      _module.args.pkgs = lib.mkDefault pkgs;
+      _module.args.superPkgs = pkgs;
       _module.check = check;
       lib = lib.hm;
     } // optionalAttrs useNixpkgsModule {
